@@ -15,7 +15,7 @@ services:
       - DATABASE_SCHEDULER_MYSQL_ENABLED=${DATABASE_SCHEDULER_MYSQL_ENABLED:-True}
 
   kafka-jmx-exporter:
-    image: bitnami/jmx-exporter:latest
+    image: soldevelo/jmx-exporter:latest
     container_name: kafka-jmx-exporter
     ports:
       - 5556:5556
